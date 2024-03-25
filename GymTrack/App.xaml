@@ -1,0 +1,10 @@
+﻿<Application x:Class="GymTrack.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:GymTrack"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Default theme -->
+        <ResourceDictionary Source="Resources/Themes/LightTheme.xaml"/>
+    </Application.Resources>
+</Application>

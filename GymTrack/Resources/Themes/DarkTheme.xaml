@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Universal color brushes -->
+    <SolidColorBrush x:Key="WindowBackground" Color="#212121"/>
+    <SolidColorBrush x:Key="HeaderText" Color="#eeeeee"/>
+    <SolidColorBrush x:Key="SubHeaderForeground" Color="#cacdff"/>
+    <SolidColorBrush x:Key="ListViewBackground" Color="#021323"/>
+    <SolidColorBrush x:Key="ListViewForeground" Color="#acacac"/>
+    <SolidColorBrush x:Key="ListItemBackground" Color="#122245"/>
+    <SolidColorBrush x:Key="ListItemTitleForeground" Color="#2462f9"/>
+    <SolidColorBrush x:Key="ListItemDetailsForeground" Color="#cdcdcd"/>
+    <SolidColorBrush x:Key="MainMenuButtonBackground" Color="#004477"/>
+    <SolidColorBrush x:Key="MainMenuButtonForeground" Color="White"/>
+    <SolidColorBrush x:Key="EditButtonBackground" Color="#eeddff"/>
+    <SolidColorBrush x:Key="EditButtonForeground" Color="#001122"/>
+
+    <!-- Settings windows color brushes -->
+    <SolidColorBrush x:Key="SettingsWindows_TextBlockForeground" Color="#aaccff"/>
+    <SolidColorBrush x:Key="SettingsWindows_ImportButtonBackground" Color="#5599aa"/>
+    <SolidColorBrush x:Key="SettingsWindows_ImportButtonForeground" Color="White"/>
+    <SolidColorBrush x:Key="SettingsWindows_ExportButtonBackground" Color="#4477aa"/>
+    <SolidColorBrush x:Key="SettingsWindows_ExportButtonForeground" Color="White"/>
+
+    <!-- MainWindow specific brushes -->
+    <SolidColorBrush x:Key="MW_ButtonBackground" Color="#444144"/>
+    <SolidColorBrush x:Key="MW_ButtonForeground" Color="#ffffcc"/>
+    <SolidColorBrush x:Key="MW_ListItemButtonBackground" Color="#aacade"/>
+    <SolidColorBrush x:Key="MW_ListItemButtonForeground" Color="#115511"/>
+
+    <!-- AccountSettingsWindow specific brushes -->
+    <SolidColorBrush x:Key="AccSW_TextBoxBackground" Color="#334455"/>
+    <SolidColorBrush x:Key="AccSW_TextBoxForeground" Color="Wheat"/>
+    <SolidColorBrush x:Key="AccSW_DayoffButtonSelectedBackground" Color="LightGreen"/>
+    <SolidColorBrush x:Key="AccSW_DayoffButtonDefaultBackground" Color="#005555"/>
+    <SolidColorBrush x:Key="AccSW_DayoffButtonForeground" Color="White"/>
+
+    <!-- TrainingWindow specific brushes -->
+    <SolidColorBrush x:Key="TW_InactiveElementColor" Color="Transparent"/>
+    <SolidColorBrush x:Key="TW_ActiveElementBorderBrush" Color="#113366"/>
+    <SolidColorBrush x:Key="TW_ActiveTextboxBackground" Color="#112299"/>
+    <SolidColorBrush x:Key="TW_NewExerciseButtonBackground" Color="#457845"/>
+    <SolidColorBrush x:Key="TW_NewExerciseButtonForeground" Color="LightGray"/>
+    <SolidColorBrush x:Key="TW_DeleteButtonBackground" Color="#390000"/>
+    <SolidColorBrush x:Key="TW_DeleteButtonForeground" Color="Wheat"/>
+    <SolidColorBrush x:Key="TW_MarkCompleteButtonBackground" Color="#222255"/>
+    <SolidColorBrush x:Key="TW_MarkCompleteButtonForeground" Color="LightGoldenrodYellow"/>
+
+</ResourceDictionary>

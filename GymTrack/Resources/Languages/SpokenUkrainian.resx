@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppSW_12formatComboboxItem" xml:space="preserve">
+    <value>12 годинки</value>
+  </data>
+  <data name="AppSW_12formatDescription" xml:space="preserve">
+    <value>12-годинний формат: формат з модними AM/PM</value>
+  </data>
+  <data name="AppSW_24formatComboboxItem" xml:space="preserve">
+    <value>24 годинки</value>
+  </data>
+  <data name="AppSW_24formatDescription" xml:space="preserve">
+    <value>24-годинний формат: нормальний формат, без цих ваших AM чи PM</value>
+  </data>
+  <data name="AppSW_barbieThemeComboboxItem" xml:space="preserve">
+    <value>Барбі</value>
+  </data>
+  <data name="AppSW_barbieThemeDescription" xml:space="preserve">
+    <value>Кожна ніч - дівоча ніч</value>
+  </data>
+  <data name="AppSW_currentTrainingsFolderText" xml:space="preserve">
+    <value>Ось де папка:</value>
+  </data>
+  <data name="AppSW_darkThemeComboboxItem" xml:space="preserve">
+    <value>Темна</value>
+  </data>
+  <data name="AppSW_darkThemeDescription" xml:space="preserve">
+    <value>Темний фон, світлий перед. Для поціновувачів погіршення зору у віці 30+</value>
+  </data>
+  <data name="AppSW_engLanguageComboboxItem" xml:space="preserve">
+    <value>Енглісх</value>
+  </data>
+  <data name="AppSW_engLanguageDescription" xml:space="preserve">
+    <value>Нудна англійська мова</value>
+  </data>
+  <data name="AppSW_exportAppSettingsButtonContent" xml:space="preserve">
+    <value>Експорт цих налаштувань</value>
+  </data>
+  <data name="AppSW_exportSettingsTextBlock" xml:space="preserve">
+    <value>Експортуй налаштування програми:</value>
+  </data>
+  <data name="AppSW_folderButtonContent" xml:space="preserve">
+    <value>Хочу нову папку</value>
+  </data>
+  <data name="AppSW_hackerThemeComboboxItem" xml:space="preserve">
+    <value>Мамин хацкер</value>
+  </data>
+  <data name="AppSW_hackerThemeDescription" xml:space="preserve">
+    <value>Темний фон, переважно зелений перед. Для маминих хацкерів</value>
+  </data>
+  <data name="AppSW_header" xml:space="preserve">
+    <value>Чуєш, та конфігуруй цей GymTrack як заманеться!</value>
+  </data>
+  <data name="AppSW_importAppSettingsButtonContent" xml:space="preserve">
+    <value>Імпорт моїх налаштувань</value>
+  </data>
+  <data name="AppSW_importSettingsTextBlock" xml:space="preserve">
+    <value>Обери шлях, де треба взяти конфігурацію застосунку:</value>
+  </data>
+  <data name="AppSW_languageTextBlock" xml:space="preserve">
+    <value>Мова:</value>
+  </data>
+  <data name="AppSW_lightThemeComboboxItem" xml:space="preserve">
+    <value>Світла</value>
+  </data>
+  <data name="AppSW_lightThemeDescription" xml:space="preserve">
+    <value>Світлий фон, темний перед. Для поціновувачів яскравого світла</value>
+  </data>
+  <data name="AppSW_literatureUkrLanguageComboboxItem" xml:space="preserve">
+    <value>Літературна українська</value>
+  </data>
+  <data name="AppSW_literatureUkrLanguageDescription" xml:space="preserve">
+    <value>Чиста українська мова</value>
+  </data>
+  <data name="AppSW_oppenheimerThemeComboboxItem" xml:space="preserve">
+    <value>Оппенгеймер</value>
+  </data>
+  <data name="AppSW_oppenheimerThemeDescription" xml:space="preserve">
+    <value>Я став смертю, руйнівником світів</value>
+  </data>
+  <data name="AppSW_spokenUkrLanguageComboboxItem" xml:space="preserve">
+    <value>Розмовна українська</value>
+  </data>
+  <data name="AppSW_spokenUkrLanguageDescription" xml:space="preserve">
+    <value>Файна мова з підколами</value>
+  </data>
+  <data name="AppSW_themeTextBlock" xml:space="preserve">
+    <value>Тема:</value>
+  </data>
+  <data name="AppSW_timeFormatTextBlock" xml:space="preserve">
+    <value>Формат часу:</value>
+  </data>
+  <data name="AppSW_trainingFolderPathTextBlock" xml:space="preserve">
+    <value>Шлях до папки з даними твоїх вельми, трясця, чудових тренувань:</value>
+  </data>
+  <data name="AppSW_windowTitle" xml:space="preserve">
+    <value>Налаштування застосунку</value>
+  </data>
+  <data name="ASW_dayoffsFriday" xml:space="preserve">
+    <value>П'ят</value>
+  </data>
+  <data name="ASW_dayoffsInfoTextBlock" xml:space="preserve">
+    <value>Поваляєшся в такі дні:</value>
+  </data>
+  <data name="ASW_dayoffsInfoTextBlockDefault" xml:space="preserve">
+    <value>Чудово! Будеш тренуватись щодня!</value>
+  </data>
+  <data name="ASW_dayoffsMonday" xml:space="preserve">
+    <value>Зроз</value>
+  </data>
+  <data name="ASW_dayoffsSaturday" xml:space="preserve">
+    <value>Під</value>
+  </data>
+  <data name="ASW_dayoffsSunday" xml:space="preserve">
+    <value>Нід</value>
+  </data>
+  <data name="ASW_dayoffsTextBlock" xml:space="preserve">
+    <value>Дні лежання на дивані:</value>
+  </data>
+  <data name="ASW_dayoffsThursday" xml:space="preserve">
+    <value>Щот</value>
+  </data>
+  <data name="ASW_dayoffsTuesday" xml:space="preserve">
+    <value>Вів</value>
+  </data>
+  <data name="ASW_dayoffsWednesday" xml:space="preserve">
+    <value>Сер</value>
+  </data>
+  <data name="ASW_exportAccountButtonContent" xml:space="preserve">
+    <value>Експорт цих даних</value>
+  </data>
+  <data name="ASW_exportAccountTextBlock" xml:space="preserve">
+    <value>Експортуй дані про себе:</value>
+  </data>
+  <data name="ASW_friday" xml:space="preserve">
+    <value>П'ятниця</value>
+  </data>
+  <data name="ASW_header" xml:space="preserve">
+    <value>Всі твої дані</value>
+  </data>
+  <data name="ASW_headerNoAccount" xml:space="preserve">
+    <value>Створіть обліковий запис чи імпортуй той, що вже є!</value>
+  </data>
+  <data name="ASW_importAccountButtonContent" xml:space="preserve">
+    <value>Імпорт існуючих даних про тебе</value>
+  </data>
+  <data name="ASW_importAccountTextBlock" xml:space="preserve">
+    <value>Обери звідки мені читати дані облікового запису:</value>
+  </data>
+  <data name="ASW_monday" xml:space="preserve">
+    <value>Зрозеділок</value>
+  </data>
+  <data name="ASW_nameEntryError" xml:space="preserve">
+    <value>Чорт забирай! Введи своє ім'я!</value>
+  </data>
+  <data name="ASW_nameTextBlock" xml:space="preserve">
+    <value>Ім'я:</value>
+  </data>
+  <data name="ASW_nameTextBox" xml:space="preserve">
+    <value>Тут вводь своє ім'я</value>
+  </data>
+  <data name="ASW_saturday" xml:space="preserve">
+    <value>Підота</value>
+  </data>
+  <data name="ASW_sunday" xml:space="preserve">
+    <value>Ніділя</value>
+  </data>
+  <data name="ASW_thursday" xml:space="preserve">
+    <value>Щотвер</value>
+  </data>
+  <data name="ASW_tuesday" xml:space="preserve">
+    <value>Вівперунок</value>
+  </data>
+  <data name="ASW_wednesday" xml:space="preserve">
+    <value>Середа</value>
+  </data>
+  <data name="ASW_weightEntryError" xml:space="preserve">
+    <value>Стри те, що написано в якості ваги і вкажи її нормально</value>
+  </data>
+  <data name="ASW_weightTextBlock" xml:space="preserve">
+    <value>Вага:</value>
+  </data>
+  <data name="ASW_weightTextBoxDefault" xml:space="preserve">
+    <value>Якщо хочеш, вводь тут вагу</value>
+  </data>
+  <data name="ASW_weightTrackTextBlock" xml:space="preserve">
+    <value>Хочу знати, що з вагою</value>
+  </data>
+  <data name="ASW_windowTitle" xml:space="preserve">
+    <value>Налаштування всього, що стосується тебе</value>
+  </data>
+  <data name="editButtonEditModeContent" xml:space="preserve">
+    <value>Поправити</value>
+  </data>
+  <data name="editButtonSaveModeContent" xml:space="preserve">
+    <value>Запам'ятати</value>
+  </data>
+  <data name="ExerciseDto_customPropertyPrompt" xml:space="preserve">
+    <value>Якась властивість(повтори/секунди чи що)</value>
+  </data>
+  <data name="ExerciseDto_descriptionPrompt" xml:space="preserve">
+    <value>Що це за вправа</value>
+  </data>
+  <data name="ExerciseDto_titlePrompt" xml:space="preserve">
+    <value>Назва вправи</value>
+  </data>
+  <data name="exerciseMainInfoSetsText" xml:space="preserve">
+    <value>Кількість підходів:</value>
+  </data>
+  <data name="fillFieldsErrorMessage" xml:space="preserve">
+    <value>Ану заповни всі поля, що треба</value>
+  </data>
+  <data name="fillFieldsErrorTitle" xml:space="preserve">
+    <value>Негайно надай всі потрібні дані</value>
+  </data>
+  <data name="jsonFileTitle" xml:space="preserve">
+    <value>Джейсон-Мейсон</value>
+  </data>
+  <data name="mainMenuButtonContent" xml:space="preserve">
+    <value>Вйо до меню</value>
+  </data>
+  <data name="MW_accountButtonContent" xml:space="preserve">
+    <value>Про тебе</value>
+  </data>
+  <data name="MW_analyticsButtonContent" xml:space="preserve">
+    <value>Аналітика</value>
+  </data>
+  <data name="MW_exitConfirmationText" xml:space="preserve">
+    <value>Тю на тебе! Ти реально хочеш вийти?</value>
+  </data>
+  <data name="MW_exitConfirmationTitle" xml:space="preserve">
+    <value>Вихід із застосунку</value>
+  </data>
+  <data name="MW_noTrainingsText" xml:space="preserve">
+    <value>Агов, в тебе тут зовсім тренувань немає! Додай хоча б одне і вперед до роботи!</value>
+  </data>
+  <data name="MW_openTrainingButtonContent" xml:space="preserve">
+    <value>Глянути</value>
+  </data>
+  <data name="MW_settingsButtonContent" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="MW_trainingButtonContent" xml:space="preserve">
+    <value>Додати ще трен.</value>
+  </data>
+  <data name="MW_welcomeText" xml:space="preserve">
+    <value>О, знову ти! Привіт, </value>
+  </data>
+  <data name="MW_windowTitle" xml:space="preserve">
+    <value>Головне меню</value>
+  </data>
+  <data name="saveDataErrorMessage" xml:space="preserve">
+    <value>Спочатку може збережеш всі дані, що зараз редагуєш?</value>
+  </data>
+  <data name="saveDataErrorTitle" xml:space="preserve">
+    <value>Негайно збережи всі дані</value>
+  </data>
+  <data name="settingsExportErrorMessage" xml:space="preserve">
+    <value>Налаштування не було експортовано. Спробуй ще раз, може пощастить</value>
+  </data>
+  <data name="settingsExportErrorTitle" xml:space="preserve">
+    <value>Ну як так?! Помилка експорту налаштувань</value>
+  </data>
+  <data name="settingsImportErrorMessage" xml:space="preserve">
+    <value>Журба... Не вийшло зчитати інформацію із файлу, якого ти мені пхаєш</value>
+  </data>
+  <data name="settingsImportErrorTitle" xml:space="preserve">
+    <value>Дідько! Неправильний чи пошкоджений файл конфігурації</value>
+  </data>
+  <data name="settingsSubHeader" xml:space="preserve">
+    <value>*На жаль, дані я не продаю, так що всі вони є твоїми і зберігаються лише на цьому пристрої</value>
+  </data>
+  <data name="successfullSettingsExportMessage" xml:space="preserve">
+    <value>Це перемога! Налаштування успішно експортовано</value>
+  </data>
+  <data name="successfullSettingsExportTitle" xml:space="preserve">
+    <value>Експорт виконано</value>
+  </data>
+  <data name="successfullSettingsImportMessage" xml:space="preserve">
+    <value>О, так, крихітко! Налаштування успішно імпортовано</value>
+  </data>
+  <data name="successfullSettingsImportTitle" xml:space="preserve">
+    <value>Це чудово! Імпорт успішний</value>
+  </data>
+  <data name="TCompW_cancelButtonContent" xml:space="preserve">
+    <value>Передумати</value>
+  </data>
+  <data name="TCompW_confirmButtonContent" xml:space="preserve">
+    <value>Ствердити</value>
+  </data>
+  <data name="TCompW_windowTitle" xml:space="preserve">
+    <value>Позначення тренування ледь виконаним</value>
+  </data>
+  <data name="TrainingDto_trainingTitlePrompt" xml:space="preserve">
+    <value>Туто вводь назву тренування, ясно?</value>
+  </data>
+  <data name="Transformer_infoTextMinute" xml:space="preserve">
+    <value>хвилинка</value>
+  </data>
+  <data name="Transformer_infoTextMinutes" xml:space="preserve">
+    <value>хвилинок(ки)</value>
+  </data>
+  <data name="Transformer_infoTextPart" xml:space="preserve">
+    <value>вправ(и) загалом, приблизний час відпочинку (ну це явно забагато):</value>
+  </data>
+  <data name="TW_deleteButtonContent" xml:space="preserve">
+    <value>Стерти</value>
+  </data>
+  <data name="TW_difficultyComboboxTitle" xml:space="preserve">
+    <value>Складність:</value>
+  </data>
+  <data name="TW_difficultyEasyComboboxItem" xml:space="preserve">
+    <value>Пф, та легко</value>
+  </data>
+  <data name="TW_difficultyHardComboboxItem" xml:space="preserve">
+    <value>Неймовірно важко</value>
+  </data>
+  <data name="TW_difficultyMediumComboboxItem" xml:space="preserve">
+    <value>Ну таке, серединка</value>
+  </data>
+  <data name="TW_difficultyWarmupComboboxItem" xml:space="preserve">
+    <value>Розминочка чисто</value>
+  </data>
+  <data name="TW_emptyTrainingListErrorMessage" xml:space="preserve">
+    <value>Смієшся? Та хоча б одну вправу до тренування додай</value>
+  </data>
+  <data name="TW_emptyTrainingListErrorTitle" xml:space="preserve">
+    <value>Агов, тренування пусте</value>
+  </data>
+  <data name="TW_emptyTrainingObjectErrorMessage" xml:space="preserve">
+    <value>Чорт би його побрав! Дані цього тренування було посунуто чи геть пошкоджено. Зараз перекинемо тебе назад до головного меню</value>
+  </data>
+  <data name="TW_emptyTrainingObjectErrorTitle" xml:space="preserve">
+    <value>Овва! Помилка читки даних</value>
+  </data>
+  <data name="TW_enterNumberErrorMessage" xml:space="preserve">
+    <value>Що ти туди пхаєш? Там число треба!</value>
+  </data>
+  <data name="TW_exerciseDeletionPromptMessage" xml:space="preserve">
+    <value>Чи хочеш ти реально видалити вправу під назвою</value>
+  </data>
+  <data name="TW_exerciseDeletionPromptTitle" xml:space="preserve">
+    <value>Ану підтверди видалення</value>
+  </data>
+  <data name="TW_markAsCompletedButtonContent" xml:space="preserve">
+    <value>Позначити ледь виконаним</value>
+  </data>
+  <data name="TW_newExerciseButtonContent" xml:space="preserve">
+    <value>Додати якусь неймовірну вправу</value>
+  </data>
+  <data name="TW_noExercisesTextBlock" xml:space="preserve">
+    <value>Тут пусто, вправ тупо нуль. Додай нову вправу, щоб хоч якийсь гіпотетичний сенс в цьому тренуванні був</value>
+  </data>
+  <data name="TW_saveAndBackToMainButtonContent" xml:space="preserve">
+    <value>Зберегти та вйо до меню</value>
+  </data>
+  <data name="TW_setsCountTextBlock" xml:space="preserve">
+    <value>Кількість підходів:</value>
+  </data>
+  <data name="TW_totalExercisesText" xml:space="preserve">
+    <value>Всього вправ (тю, як мало):</value>
+  </data>
+  <data name="TW_totalSetsText" xml:space="preserve">
+    <value>. Загалом підходів:</value>
+  </data>
+  <data name="TW_trainingAlreadyExistsErrorMessage" xml:space="preserve">
+    <value>Тренування з такою назвою вже є. Може зміниш назву, нє?</value>
+  </data>
+  <data name="TW_trainingAlreadyExistsErrorTitle" xml:space="preserve">
+    <value>Агов, таке тренування вже є</value>
+  </data>
+  <data name="TW_trainingDeletionPromptMessage" xml:space="preserve">
+    <value>Ти реально хочеш видалити це тренування? З якого це чуда?</value>
+  </data>
+  <data name="TW_trainingDeletionPromptTitle" xml:space="preserve">
+    <value>Ану підтверди видалення</value>
+  </data>
+  <data name="TW_trainingTitleErrorMessage" xml:space="preserve">
+    <value>Ану вводь нову назву тренування! І щоб щось крім пробілів було!</value>
+  </data>
+  <data name="TW_unknownSavingErrorMessage" xml:space="preserve">
+    <value>Що за чортівня? Щось дивне трапилось при спробі запису даних. Ану спробуй ще раз</value>
+  </data>
+  <data name="TW_unknownSavingErrorTitle" xml:space="preserve">
+    <value>Та щоб його! Помилка зберігання</value>
+  </data>
+  <data name="TW_windowTitle" xml:space="preserve">
+    <value>Тренування (ой, як же епічно звучить)</value>
+  </data>
+  <data name="wrongInputTitle" xml:space="preserve">
+    <value>Агов, схаменися! Неправильний ввід</value>
+  </data>
+</root>

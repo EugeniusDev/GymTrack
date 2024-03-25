@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppSW_12formatComboboxItem" xml:space="preserve">
+    <value>12 H</value>
+  </data>
+  <data name="AppSW_12formatDescription" xml:space="preserve">
+    <value>12-hour format: AM/PM format</value>
+  </data>
+  <data name="AppSW_24formatComboboxItem" xml:space="preserve">
+    <value>24 H</value>
+  </data>
+  <data name="AppSW_24formatDescription" xml:space="preserve">
+    <value>24-hour format: without AM or PM</value>
+  </data>
+  <data name="AppSW_barbieThemeComboboxItem" xml:space="preserve">
+    <value>Barbie</value>
+  </data>
+  <data name="AppSW_barbieThemeDescription" xml:space="preserve">
+    <value>Every night is girls' night</value>
+  </data>
+  <data name="AppSW_currentTrainingsFolderText" xml:space="preserve">
+    <value>Current path:</value>
+  </data>
+  <data name="AppSW_darkThemeComboboxItem" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="AppSW_darkThemeDescription" xml:space="preserve">
+    <value>Dark background, lighter foreground. For dark theme enjoyers</value>
+  </data>
+  <data name="AppSW_engLanguageComboboxItem" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="AppSW_engLanguageDescription" xml:space="preserve">
+    <value>Classical English language</value>
+  </data>
+  <data name="AppSW_exportAppSettingsButtonContent" xml:space="preserve">
+    <value>Export your app settings</value>
+  </data>
+  <data name="AppSW_exportSettingsTextBlock" xml:space="preserve">
+    <value>Export your app settings:</value>
+  </data>
+  <data name="AppSW_folderButtonContent" xml:space="preserve">
+    <value>Choose new folder</value>
+  </data>
+  <data name="AppSW_hackerThemeComboboxItem" xml:space="preserve">
+    <value>Hacker</value>
+  </data>
+  <data name="AppSW_hackerThemeDescription" xml:space="preserve">
+    <value>Dark background, mostly green foreground. For hacking stereotypes enjoyers</value>
+  </data>
+  <data name="AppSW_header" xml:space="preserve">
+    <value>Configure GymTrack however you like!</value>
+  </data>
+  <data name="AppSW_importAppSettingsButtonContent" xml:space="preserve">
+    <value>Import app settings</value>
+  </data>
+  <data name="AppSW_importSettingsTextBlock" xml:space="preserve">
+    <value>Locate app configuration file:</value>
+  </data>
+  <data name="AppSW_languageTextBlock" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="AppSW_lightThemeComboboxItem" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="AppSW_lightThemeDescription" xml:space="preserve">
+    <value>Light background, darker foreground. For light theme enjoyers</value>
+  </data>
+  <data name="AppSW_literatureUkrLanguageComboboxItem" xml:space="preserve">
+    <value>Літературна українська</value>
+  </data>
+  <data name="AppSW_literatureUkrLanguageDescription" xml:space="preserve">
+    <value>Чиста українська мова</value>
+  </data>
+  <data name="AppSW_oppenheimerThemeComboboxItem" xml:space="preserve">
+    <value>Oppenheimer</value>
+  </data>
+  <data name="AppSW_oppenheimerThemeDescription" xml:space="preserve">
+    <value>I am become death, the destroyer of worlds</value>
+  </data>
+  <data name="AppSW_spokenUkrLanguageComboboxItem" xml:space="preserve">
+    <value>Розмовна українська</value>
+  </data>
+  <data name="AppSW_spokenUkrLanguageDescription" xml:space="preserve">
+    <value>Файна мова з підколами</value>
+  </data>
+  <data name="AppSW_themeTextBlock" xml:space="preserve">
+    <value>Theme:</value>
+  </data>
+  <data name="AppSW_timeFormatTextBlock" xml:space="preserve">
+    <value>Time format:</value>
+  </data>
+  <data name="AppSW_trainingFolderPathTextBlock" xml:space="preserve">
+    <value>Training data folder path:</value>
+  </data>
+  <data name="AppSW_windowTitle" xml:space="preserve">
+    <value>Application Settings</value>
+  </data>
+  <data name="ASW_dayoffsFriday" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="ASW_dayoffsInfoTextBlock" xml:space="preserve">
+    <value>You will rest on: </value>
+  </data>
+  <data name="ASW_dayoffsInfoTextBlockDefault" xml:space="preserve">
+    <value>You will have to train every day</value>
+  </data>
+  <data name="ASW_dayoffsMonday" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="ASW_dayoffsSaturday" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="ASW_dayoffsSunday" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="ASW_dayoffsTextBlock" xml:space="preserve">
+    <value>Training-free days:</value>
+  </data>
+  <data name="ASW_dayoffsThursday" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="ASW_dayoffsTuesday" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="ASW_dayoffsWednesday" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="ASW_exportAccountButtonContent" xml:space="preserve">
+    <value>Export your account settings</value>
+  </data>
+  <data name="ASW_exportAccountTextBlock" xml:space="preserve">
+    <value>Export your account settings:</value>
+  </data>
+  <data name="ASW_friday" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="ASW_header" xml:space="preserve">
+    <value>Your account center</value>
+  </data>
+  <data name="ASW_headerNoAccount" xml:space="preserve">
+    <value>Create an account or import existing one!</value>
+  </data>
+  <data name="ASW_importAccountButtonContent" xml:space="preserve">
+    <value>Import an existing account</value>
+  </data>
+  <data name="ASW_importAccountTextBlock" xml:space="preserve">
+    <value>Locate account configuration file:</value>
+  </data>
+  <data name="ASW_monday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="ASW_nameEntryError" xml:space="preserve">
+    <value>Please, enter your name</value>
+  </data>
+  <data name="ASW_nameTextBlock" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="ASW_nameTextBox" xml:space="preserve">
+    <value>Enter your name here</value>
+  </data>
+  <data name="ASW_saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="ASW_sunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="ASW_thursday" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="ASW_tuesday" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="ASW_wednesday" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="ASW_weightEntryError" xml:space="preserve">
+    <value>Please, enter your weight properly</value>
+  </data>
+  <data name="ASW_weightTextBlock" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="ASW_weightTextBoxDefault" xml:space="preserve">
+    <value>Enter your weight here (optional)</value>
+  </data>
+  <data name="ASW_weightTrackTextBlock" xml:space="preserve">
+    <value>Track my weight</value>
+  </data>
+  <data name="ASW_windowTitle" xml:space="preserve">
+    <value>Account Settings</value>
+  </data>
+  <data name="editButtonEditModeContent" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="editButtonSaveModeContent" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ExerciseDto_customPropertyPrompt" xml:space="preserve">
+    <value>Custom property(e.g. repetitions/seconds)</value>
+  </data>
+  <data name="ExerciseDto_descriptionPrompt" xml:space="preserve">
+    <value>Exercise description</value>
+  </data>
+  <data name="ExerciseDto_titlePrompt" xml:space="preserve">
+    <value>Exercise title</value>
+  </data>
+  <data name="exerciseMainInfoSetsText" xml:space="preserve">
+    <value>Sets count:</value>
+  </data>
+  <data name="fillFieldsErrorMessage" xml:space="preserve">
+    <value>Please fill all required fields</value>
+  </data>
+  <data name="fillFieldsErrorTitle" xml:space="preserve">
+    <value>Data specifying required</value>
+  </data>
+  <data name="jsonFileTitle" xml:space="preserve">
+    <value>JSON file</value>
+  </data>
+  <data name="mainMenuButtonContent" xml:space="preserve">
+    <value>Back to Main Menu</value>
+  </data>
+  <data name="MW_accountButtonContent" xml:space="preserve">
+    <value>Your Account</value>
+  </data>
+  <data name="MW_analyticsButtonContent" xml:space="preserve">
+    <value>Analytics</value>
+  </data>
+  <data name="MW_exitConfirmationText" xml:space="preserve">
+    <value>Do you really want to exit?</value>
+  </data>
+  <data name="MW_exitConfirmationTitle" xml:space="preserve">
+    <value>Exit the app</value>
+  </data>
+  <data name="MW_noTrainingsText" xml:space="preserve">
+    <value>There are no training programs yet. Add one and begin your sport journey!</value>
+  </data>
+  <data name="MW_openTrainingButtonContent" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="MW_settingsButtonContent" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="MW_trainingButtonContent" xml:space="preserve">
+    <value>Add Training</value>
+  </data>
+  <data name="MW_welcomeText" xml:space="preserve">
+    <value>Welcome, </value>
+  </data>
+  <data name="MW_windowTitle" xml:space="preserve">
+    <value>Main Menu</value>
+  </data>
+  <data name="saveDataErrorMessage" xml:space="preserve">
+    <value>Please save all the data you are currently editing</value>
+  </data>
+  <data name="saveDataErrorTitle" xml:space="preserve">
+    <value>Data saving required</value>
+  </data>
+  <data name="settingsExportErrorMessage" xml:space="preserve">
+    <value>Settings not exported. Please, try again</value>
+  </data>
+  <data name="settingsExportErrorTitle" xml:space="preserve">
+    <value>Export error</value>
+  </data>
+  <data name="settingsImportErrorMessage" xml:space="preserve">
+    <value>Could not read from provided file</value>
+  </data>
+  <data name="settingsImportErrorTitle" xml:space="preserve">
+    <value>Wrong or corrupted configuration file</value>
+  </data>
+  <data name="settingsSubHeader" xml:space="preserve">
+    <value>*All the data is yours. It is stored only locally on your device</value>
+  </data>
+  <data name="successfullSettingsExportMessage" xml:space="preserve">
+    <value>Settings exported successfully</value>
+  </data>
+  <data name="successfullSettingsExportTitle" xml:space="preserve">
+    <value>Export successful</value>
+  </data>
+  <data name="successfullSettingsImportMessage" xml:space="preserve">
+    <value>Settings imported successfully</value>
+  </data>
+  <data name="successfullSettingsImportTitle" xml:space="preserve">
+    <value>Import successful</value>
+  </data>
+  <data name="TCompW_cancelButtonContent" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="TCompW_confirmButtonContent" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="TCompW_windowTitle" xml:space="preserve">
+    <value>Mark training as completed</value>
+  </data>
+  <data name="TrainingDto_trainingTitlePrompt" xml:space="preserve">
+    <value>Enter training title here</value>
+  </data>
+  <data name="Transformer_infoTextMinute" xml:space="preserve">
+    <value>minute</value>
+  </data>
+  <data name="Transformer_infoTextMinutes" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="Transformer_infoTextPart" xml:space="preserve">
+    <value>exercises in total, estimated rest time:</value>
+  </data>
+  <data name="TW_deleteButtonContent" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="TW_difficultyComboboxTitle" xml:space="preserve">
+    <value>Difficulty:</value>
+  </data>
+  <data name="TW_difficultyEasyComboboxItem" xml:space="preserve">
+    <value>Easy</value>
+  </data>
+  <data name="TW_difficultyHardComboboxItem" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="TW_difficultyMediumComboboxItem" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="TW_difficultyWarmupComboboxItem" xml:space="preserve">
+    <value>Warmup</value>
+  </data>
+  <data name="TW_emptyTrainingListErrorMessage" xml:space="preserve">
+    <value>Please, add at least one exercise to this training</value>
+  </data>
+  <data name="TW_emptyTrainingListErrorTitle" xml:space="preserve">
+    <value>Training is empty</value>
+  </data>
+  <data name="TW_emptyTrainingObjectErrorMessage" xml:space="preserve">
+    <value>Oops! Data of this training was moved or permanently corrupted. You'll be redirected to main menu</value>
+  </data>
+  <data name="TW_emptyTrainingObjectErrorTitle" xml:space="preserve">
+    <value>Reading training data error</value>
+  </data>
+  <data name="TW_enterNumberErrorMessage" xml:space="preserve">
+    <value>Please, enter a number where expected</value>
+  </data>
+  <data name="TW_exerciseDeletionPromptMessage" xml:space="preserve">
+    <value>Do you really want to delete an exercise called</value>
+  </data>
+  <data name="TW_exerciseDeletionPromptTitle" xml:space="preserve">
+    <value>Confirmation of deletion</value>
+  </data>
+  <data name="TW_markAsCompletedButtonContent" xml:space="preserve">
+    <value>Mark as completed</value>
+  </data>
+  <data name="TW_newExerciseButtonContent" xml:space="preserve">
+    <value>Add new exercise</value>
+  </data>
+  <data name="TW_noExercisesTextBlock" xml:space="preserve">
+    <value>There are no exercises yet. Add one to fill this training up</value>
+  </data>
+  <data name="TW_saveAndBackToMainButtonContent" xml:space="preserve">
+    <value>Save and back to main menu</value>
+  </data>
+  <data name="TW_setsCountTextBlock" xml:space="preserve">
+    <value>Sets count:</value>
+  </data>
+  <data name="TW_totalExercisesText" xml:space="preserve">
+    <value>Total exercises:</value>
+  </data>
+  <data name="TW_totalSetsText" xml:space="preserve">
+    <value>. Total sets:</value>
+  </data>
+  <data name="TW_trainingAlreadyExistsErrorMessage" xml:space="preserve">
+    <value>Training with such title already exists. Please, change the title of this training</value>
+  </data>
+  <data name="TW_trainingAlreadyExistsErrorTitle" xml:space="preserve">
+    <value>Such training already exists</value>
+  </data>
+  <data name="TW_trainingDeletionPromptMessage" xml:space="preserve">
+    <value>Do you really want to delete this training?</value>
+  </data>
+  <data name="TW_trainingDeletionPromptTitle" xml:space="preserve">
+    <value>Confirmation of deletion</value>
+  </data>
+  <data name="TW_trainingTitleErrorMessage" xml:space="preserve">
+    <value>Enter new name of training. Whitespaces are not an option</value>
+  </data>
+  <data name="TW_unknownSavingErrorMessage" xml:space="preserve">
+    <value>Unknown error occured while trying to save the data. Please, try again</value>
+  </data>
+  <data name="TW_unknownSavingErrorTitle" xml:space="preserve">
+    <value>Saving error</value>
+  </data>
+  <data name="TW_windowTitle" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="wrongInputTitle" xml:space="preserve">
+    <value>Wrong input</value>
+  </data>
+</root>

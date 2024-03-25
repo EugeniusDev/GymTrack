@@ -1,0 +1,166 @@
+﻿<Window x:Class="GymTrack.TrainingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GymTrack"
+        mc:Ignorable="d"
+        Title="{Binding UILanguageRes.WindowTitle}" Width="1200" Height="800" MinWidth="300" MinHeight="200"
+        WindowStartupLocation="CenterScreen" Background="{DynamicResource WindowBackground}" Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <!-- General info about training -->
+        <StackPanel Grid.ColumnSpan="3" Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <TextBox Grid.Column="1" Margin="10"
+                FontSize="42" FontWeight="Black" TextWrapping="NoWrap" TextAlignment="Center" VerticalAlignment="Center"
+                Focusable="False" Background="Transparent" BorderThickness="0"
+                x:Name="TrainingTitleTextBox" Text="Enter training title here"
+                Foreground="{DynamicResource HeaderText}"/>
+            <Button Width="100" Height="50" Margin="10" FontSize="16"
+                x:Name="EditTrainingTitleButton" Click="EditTrainingNameButton_Click"
+                Background="{DynamicResource EditButtonBackground}" Foreground="{DynamicResource EditButtonForeground}"
+                Content="{Binding UILanguageRes.EditButtonContent}"/>
+        </StackPanel>
+        <TextBlock Grid.ColumnSpan="3" Grid.Row="1"
+            FontSize="24" FontWeight="Light" FontStyle="Italic" TextWrapping="NoWrap" TextAlignment="Center"
+            x:Name="DescriptionOfTrainingTextBlock" Text="Total exercises: 0. Total sets: 0"
+            Foreground="{DynamicResource SubHeaderForeground}"/>
+        <!-- Everything related with list of trainings info -->
+        <Border Margin="10" Background="{DynamicResource ListViewBackground}" CornerRadius="15" Grid.Row="2" Grid.Column="1" >
+            <!-- StackPanel for convenient display of text in case of lack of data -->
+            <StackPanel x:Name="TrainingListStackPanel">
+                <TextBlock Margin="20" TextWrapping="Wrap" TextAlignment="Center"
+                    FontSize="36" FontWeight="Light" Foreground="{DynamicResource ListViewForeground}"
+                    Visibility="Collapsed" x:Name="NoExercisesYetTextBlock"
+                    Text="{Binding UILanguageRes.NoExercisesTextBlock}"/>
+                <!-- Actual list of exercises info -->
+                <ListView x:Name="ExercisesListView" Margin="10"
+                          Background="{DynamicResource ListViewBackground}" BorderThickness="0" HorizontalAlignment="Center"
+                          Height="380" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <ListView.ItemTemplate>
+                        <!-- Template grid that is used for ListView population -->
+                        <DataTemplate>
+                            <Grid HorizontalAlignment="Center" MinHeight="250" MinWidth="900">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="3*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="6*"/>
+                                    <ColumnDefinition Width="6*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.ColumnSpan="3" Grid.RowSpan="3" Margin="2" Background="{DynamicResource ListItemBackground}" CornerRadius="15"/>
+
+                                <StackPanel Grid.ColumnSpan="2">
+                                    <!-- Exercise title related -->
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                        <!-- Title of exercise -->
+                                        <TextBox FontSize="40" FontWeight="DemiBold" MinWidth="400" MaxWidth="670"
+                                            VerticalAlignment="Center" TextAlignment="Center" Margin="16"
+                                            Foreground="{DynamicResource ListItemTitleForeground}" Background="{DynamicResource TW_InactiveElementColor}" BorderBrush="{DynamicResource TW_InactiveElementColor}"
+                                            Focusable="False" x:Name="ExerciseTitleTextBox" Text="Exercise title"/>
+                                    </StackPanel>
+                                    <!-- Exercise descriptioni related -->
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                        <!-- Description of exercise -->
+                                        <TextBox FontSize="20" FontWeight="Regular" MinWidth="640" MaxWidth="670" MinHeight="140" MaxHeight="150"
+                                            VerticalAlignment="Center" Margin="12" TextWrapping="Wrap"
+                                            Background="{DynamicResource TW_InactiveElementColor}" Foreground="{DynamicResource ListItemDetailsForeground}" BorderBrush="{DynamicResource TW_InactiveElementColor}"
+                                            Focusable="False" x:Name="ExerciseDescriptionTextBox" Text="Exercise description"/>
+                                    </StackPanel >
+                                    <!-- Difficulty, sets and reps count related -->
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                                        <!-- Difficulty related-->
+                                        <StackPanel Margin="20, 2">
+                                            <TextBlock Grid.ColumnSpan="3" Grid.Row="1"
+                                                FontSize="16" FontWeight="Light" FontStyle="Italic" TextWrapping="NoWrap" TextAlignment="Center"
+                                                Text="{Binding ExerciseUI.DifficultyComboboxTitle}"
+                                                Foreground="{DynamicResource ListItemDetailsForeground}"/>
+                                            <ComboBox MinWidth="170" MinHeight="40" MaxHeight="50" SelectedIndex="0" Margin="10" IsHitTestVisible="False"
+                                                FontSize="20" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Aqua"
+                                                x:Name="ExerciseDifficultyCombobox">
+                                                <ComboBoxItem Content="{Binding ExerciseUI.WarmupComboboxItem}"/>
+                                                <ComboBoxItem Content="{Binding ExerciseUI.EasyComboboxItem}"/>
+                                                <ComboBoxItem Content="{Binding ExerciseUI.MediumComboboxItem}"/>
+                                                <ComboBoxItem Content="{Binding ExerciseUI.HardComboboxItem}"/>
+                                            </ComboBox>
+                                        </StackPanel>
+                                        <!-- Sets count related -->
+                                        <StackPanel Margin="20, 2">
+                                            <TextBlock Grid.ColumnSpan="3" Grid.Row="1"
+                                                FontSize="16" FontWeight="Light" FontStyle="Italic" TextWrapping="NoWrap" TextAlignment="Center"
+                                                Foreground="{DynamicResource ListItemDetailsForeground}"
+                                                Text="{Binding ExerciseUI.SetsCountTextBlock}"/>
+                                            <!-- Sets count -->
+                                            <TextBox FontSize="30" FontWeight="DemiBold" MinWidth="60" MaxWidth="70" MinHeight="50" MaxHeight="60"
+                                                Background="{DynamicResource TW_InactiveElementColor}" BorderBrush="{DynamicResource TW_InactiveElementColor}" Foreground="{DynamicResource ListItemDetailsForeground}"                                                VerticalAlignment="Center" TextAlignment="Center" Margin="8"
+                                                Focusable="False" x:Name="ExerciseSetsCountTextBox" Text="2"/>
+                                        </StackPanel>
+                                        <!-- Reps count related -->
+                                        <StackPanel Margin="20, 2">
+                                            <TextBox Grid.ColumnSpan="3" Grid.Row="1" MinWidth="60" MaxWidth="280"
+                                                Background="{DynamicResource TW_InactiveElementColor}" BorderBrush="{DynamicResource TW_InactiveElementColor}" Foreground="{DynamicResource ListItemDetailsForeground}"
+                                                Focusable="False" FontSize="16" FontWeight="Light" FontStyle="Italic" TextWrapping="NoWrap" TextAlignment="Center"
+                                                x:Name="ExerciseCustomMetricNameTextBox" Text="Custom metric(e.g. repetitions/seconds):"/>
+                                            <!-- Reps count -->
+                                            <TextBox FontSize="30" FontWeight="DemiBold" MinWidth="60" MaxWidth="70" MinHeight="50" MaxHeight="60"
+                                                Background="{DynamicResource TW_InactiveElementColor}" BorderBrush="{DynamicResource TW_InactiveElementColor}" Focusable="False"
+                                                VerticalAlignment="Center" TextAlignment="Center" Margin="8"
+                                                x:Name="ExerciseCustomMetricValueTextBox" Text="5"
+                                                Foreground="{DynamicResource ListItemDetailsForeground}"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Grid.Column="2" VerticalAlignment="Center" Margin="10">
+                                    <!-- Button to edit an exercise -->
+                                    <Button BorderThickness="0" Margin="12" MinHeight="70" MinWidth="100" ToolTip="Delete this exercise"
+                                        Cursor="Hand" FontSize="20" FontWeight="DemiBold" FontStyle="Italic"
+                                        x:Name="EditExerciseButton" Click="EditExerciseButton_Click" Content="{Binding ExerciseUI.EditButtonContent}"
+                                        Background="{DynamicResource EditButtonBackground}" Foreground="{DynamicResource EditButtonForeground}"/>
+                                    <!-- Button to delete an exercise -->
+                                    <Button BorderThickness="0" Margin="12" MinHeight="70" MinWidth="100" ToolTip="Delete this exercise"
+                                        Background="{DynamicResource TW_DeleteButtonBackground}" Foreground="{DynamicResource TW_DeleteButtonForeground}" Cursor="Hand"
+                                        FontSize="20" FontWeight="DemiBold" FontStyle="Italic"
+                                        x:Name="DeleteExerciseButton" Click="DeleteExerciseButton_Click" Content="{Binding ExerciseUI.DeleteButtonContent}"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Border>
+
+        <!-- Button for adding new exercise -->
+        <Button Grid.Row="3" Grid.Column="1"
+            HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="320" MinHeight="60" Margin="10"
+            FontSize="24" FontWeight="Light" Background="{DynamicResource TW_NewExerciseButtonBackground}" Foreground="{DynamicResource TW_NewExerciseButtonForeground}"
+            x:Name="AddNewExerciseButton" Click="AddNewExerciseButton_Click"  Content="{Binding UILanguageRes.NewExerciseButtonContent}"/>
+        <!-- Buttons that delete or complete the training -->
+        <StackPanel Grid.ColumnSpan="3" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- Button for deleting the training -->
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="270" MinHeight="80" Margin="10"
+                FontSize="22" FontWeight="DemiBold" Background="{DynamicResource TW_DeleteButtonBackground}" Foreground="{DynamicResource TW_DeleteButtonForeground}"
+                x:Name="DeleteTrainingAndOpenMenuButton" Click="DeleteTrainingAndOpenMenuButton_Click" Content="{Binding UILanguageRes.DeleteButtonContent}"/>
+            <!-- Button for saving the training and going to main menu -->
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="400" MinHeight="80" Margin="10"
+                FontSize="22" FontWeight="DemiBold" Background="{DynamicResource MainMenuButtonBackground}" Foreground="{DynamicResource MainMenuButtonForeground}"
+                x:Name="SaveTrainingAndOpenMenuButton" Click="SaveTrainingAndOpenMenuButton_Click"  Content="{Binding UILanguageRes.SaveAndBackToMainMenuButton}"/>
+            <!-- Button for marking the training completed -->
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="270" MinHeight="80" Margin="10"
+                FontSize="22" FontWeight="DemiBold" Background="{DynamicResource TW_MarkCompleteButtonBackground}" Foreground="{DynamicResource TW_MarkCompleteButtonForeground}"
+                x:Name="CompleteTrainingButton" Click="CompleteTrainingButton_Click"  Content="{Binding UILanguageRes.MarkCompletedButtonContent}"/>
+        </StackPanel>
+    </Grid>
+</Window>
