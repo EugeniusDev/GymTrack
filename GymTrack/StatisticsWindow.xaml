@@ -1,0 +1,68 @@
+﻿<Window x:Class="GymTrack.StatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GymTrack"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        Width="1200" Height="800" MinWidth="300" MinHeight="200"
+        WindowStartupLocation="CenterScreen" Background="{DynamicResource WindowBackground}">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.ColumnSpan="3" FontSize="40" FontWeight="Black" TextWrapping="NoWrap" TextAlignment="Center" VerticalAlignment="Center"
+                   x:Name="StatisticsHeaderTextBlock" Foreground="{DynamicResource HeaderText}" Text="Statistics: Weight"/>
+        
+        <TextBlock Grid.Row="1" Grid.Column="1" FontSize="30" FontWeight="Black" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"
+                   x:Name="NoDataTextBlock" Foreground="{DynamicResource SubHeaderForeground}" Text="There is no data to form statistics from"/>
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" MinHeight="180"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Orientation="Horizontal" x:Name="StatisticsStackPanel">
+            <StackPanel x:Name="StackpanelButtonContainer" MinWidth="200" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" Margin="10"
+                    FontSize="16" FontWeight="Regular" Background="{DynamicResource ListViewBackground}" Foreground="{DynamicResource ListViewForeground}"
+                    x:Name="CompletionTimeButton" Click="CompletionTimeButton_Click"
+                    Content="{Binding CompletionTimeStatButton}"/>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" Margin="10"
+                    FontSize="16" FontWeight="Regular" Background="{DynamicResource ListViewBackground}" Foreground="{DynamicResource ListViewForeground}"
+                    x:Name="EnforceabilityButton" Click="EnforceabilityButton_Click"
+                    Content="{Binding EnforceabilityStatButton}"/>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" Margin="10"
+                    FontSize="16" FontWeight="Regular" Background="{DynamicResource ListViewBackground}" Foreground="{DynamicResource ListViewForeground}"
+                    x:Name="SetsButton" Click="SetsButton_Click"
+                    Content="{Binding SetsStatButton}"/>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150" MinHeight="60" Margin="10"
+                    FontSize="16" FontWeight="Regular" Background="{DynamicResource ListViewBackground}" Foreground="{DynamicResource ListViewForeground}"
+                    x:Name="WeightButton" Click="WeightButton_Click"
+                    Content="{Binding WeightStatButton}"/>
+
+            </StackPanel>
+            <lvc:CartesianChart MinHeight="550" MinWidth="800"
+            Series="{Binding SeriesCollection}" LegendLocation="Left">
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Dates" Labels="{Binding Labels}"></lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Metric values" LabelFormatter="{Binding Formatter}"></lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+            </lvc:CartesianChart>
+        </StackPanel>
+
+        <!-- Button to return to main menu -->
+        <Button Grid.Column="1" Grid.Row="2"
+            HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="420" MinHeight="80" Margin="10"
+            FontSize="24" FontWeight="Regular" Background="{DynamicResource MainMenuButtonBackground}" Foreground="{DynamicResource MainMenuButtonForeground}"
+            x:Name="BackToMainMenuButton" Click="BackToMainMenuButton_Click"
+            Content="{Binding MainMenuButton}"/>
+    </Grid>
+</Window>

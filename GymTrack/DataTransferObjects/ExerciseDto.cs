@@ -3,6 +3,9 @@ using System;
 
 namespace GymTrack
 {
+    /// <summary>
+    /// Used for transfering and managing data of exercise while training is opened (in TrainingWindow)
+    /// </summary>
     [Serializable]
     public class ExerciseDto
     {
@@ -14,6 +17,10 @@ namespace GymTrack
         public int CustomMetricValue { get; set; }
         public EditButtonMode EditExerciseButtonMode { get; set; }
         public ExerciseDtoUIstuff ExerciseUI { get; set; }
+
+        /// <summary>
+        /// Populates object with sample data
+        /// </summary>
         public ExerciseDto()
         {
             LanguageManager.UpdateCurrentLanguageResource();

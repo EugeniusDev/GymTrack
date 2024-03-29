@@ -1,8 +1,10 @@
 ﻿using GymTrack.Resources.Languages;
-using System.ComponentModel;
 
 namespace GymTrack
 {
+    /// <summary>
+    /// Used for displaying info of training in MainWindow
+    /// </summary>
     public class TrainingMainInfoDto
     {
         public string TrainingTitle { get; set; }

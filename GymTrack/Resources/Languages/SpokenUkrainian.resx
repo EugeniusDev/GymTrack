@@ -387,6 +387,39 @@
   <data name="settingsSubHeader" xml:space="preserve">
     <value>*На жаль, дані я не продаю, так що всі вони є твоїми і зберігаються лише на цьому пристрої</value>
   </data>
+  <data name="StatW_compTimeStatButtonContent" xml:space="preserve">
+    <value>Час викон.</value>
+  </data>
+  <data name="StatW_compTimeStatHeaderPart" xml:space="preserve">
+    <value>Час виконання типу тренувань</value>
+  </data>
+  <data name="StatW_enforceabilityStatButtonContent" xml:space="preserve">
+    <value>Виконуваність</value>
+  </data>
+  <data name="StatW_enforceabilityTimeStatHeaderPart" xml:space="preserve">
+    <value>Виконуваність (кількість тих тренувань)</value>
+  </data>
+  <data name="StatW_headerPart1" xml:space="preserve">
+    <value>Тип статистики:</value>
+  </data>
+  <data name="StatW_noDataText" xml:space="preserve">
+    <value>Нема з чого формувати тобі статистику, хаха</value>
+  </data>
+  <data name="StatW_setsStatButtonContent" xml:space="preserve">
+    <value>Підходи</value>
+  </data>
+  <data name="StatW_setsStatHeaderPart" xml:space="preserve">
+    <value>Сума підходів у хвалених тренуваннях</value>
+  </data>
+  <data name="StatW_weightStatButtonContent" xml:space="preserve">
+    <value>Вага</value>
+  </data>
+  <data name="StatW_weightTimeStatHeaderPart" xml:space="preserve">
+    <value>Ледь видимі зміни у твоїй вазі</value>
+  </data>
+  <data name="StatW_windowTitle" xml:space="preserve">
+    <value>Статистика твоїх вкрай епічних тренувань</value>
+  </data>
   <data name="successfullSettingsExportMessage" xml:space="preserve">
     <value>Це перемога! Налаштування успішно експортовано</value>
   </data>

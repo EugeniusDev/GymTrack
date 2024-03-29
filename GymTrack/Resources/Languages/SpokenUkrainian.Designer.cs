@@ -871,6 +871,105 @@ namespace GymTrack.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Час викон..
+        /// </summary>
+        public static string StatW_compTimeStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_compTimeStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Час виконання типу тренувань.
+        /// </summary>
+        public static string StatW_compTimeStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_compTimeStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Виконуваність.
+        /// </summary>
+        public static string StatW_enforceabilityStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_enforceabilityStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Виконуваність (кількість тих тренувань).
+        /// </summary>
+        public static string StatW_enforceabilityTimeStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_enforceabilityTimeStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Тип статистики:.
+        /// </summary>
+        public static string StatW_headerPart1 {
+            get {
+                return ResourceManager.GetString("StatW_headerPart1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Нема з чого формувати тобі статистику, хаха.
+        /// </summary>
+        public static string StatW_noDataText {
+            get {
+                return ResourceManager.GetString("StatW_noDataText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Підходи.
+        /// </summary>
+        public static string StatW_setsStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_setsStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Сума підходів у хвалених тренуваннях.
+        /// </summary>
+        public static string StatW_setsStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_setsStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Вага.
+        /// </summary>
+        public static string StatW_weightStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_weightStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ледь видимі зміни у твоїй вазі.
+        /// </summary>
+        public static string StatW_weightTimeStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_weightTimeStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Статистика твоїх вкрай епічних тренувань.
+        /// </summary>
+        public static string StatW_windowTitle {
+            get {
+                return ResourceManager.GetString("StatW_windowTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Це перемога! Налаштування успішно експортовано.
         /// </summary>
         public static string successfullSettingsExportMessage {

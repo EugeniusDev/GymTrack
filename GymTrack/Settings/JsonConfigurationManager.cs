@@ -1,11 +1,11 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
-using System.Text;
-using System.Windows;
 
 namespace GymTrack.Settings
 {
-
+    /// <summary>
+    /// Configuration data mapper and writer
+    /// </summary>
     public static class JsonConfigurationManager
     {
         /// <summary>

@@ -53,13 +53,13 @@
                                    x:Name="ExerciseSetsCountTextBlock" Text="{Binding ExerciseSetsCountText}"/>
                                 <!-- Button to decrease sets count -->
                                 <Button Grid.RowSpan="2"
-                                BorderThickness="0" Margin="12" ToolTip="Open this training"
+                                BorderThickness="0" Margin="12"
                                 Background="{DynamicResource MW_ListItemButtonBackground}" Foreground="{DynamicResource MW_ListItemButtonForeground}" Cursor="Hand"
                                 FontSize="64" FontWeight="DemiBold" FontStyle="Italic"
                                 x:Name="MinusButton" Click="MinusButton_Click"  Content="-"/>
                                 <!-- Button to increase sets count -->
                                 <Button Grid.Column="2" Grid.RowSpan="2"
-                                BorderThickness="0" Margin="12" ToolTip="Open this training"
+                                BorderThickness="0" Margin="12"
                                 Background="{DynamicResource MW_ListItemButtonBackground}" Foreground="{DynamicResource MW_ListItemButtonForeground}" Cursor="Hand"
                                 FontSize="64" FontWeight="DemiBold" FontStyle="Italic"
                                 x:Name="PlusButton" Click="PlusButton_Click"  Content="+"/>

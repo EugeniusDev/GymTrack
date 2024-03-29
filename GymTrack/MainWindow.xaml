@@ -27,19 +27,19 @@
         <!-- Side panel with buttons -->
         <UniformGrid Columns="1" Grid.RowSpan="3" MinWidth="100" MinHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center">
             <!-- Account settings button -->
-            <Button ToolTip="Account Settings" Margin="0,0,0, 10" MaxHeight="80"
+            <Button Margin="0,0,0, 10" MaxHeight="80"
                 Background="{DynamicResource MW_ButtonBackground}" Foreground="{DynamicResource MW_ButtonForeground}"
                 x:Name="AccountSettingsButton" Click="AccountSettingsButton_Click" Content="{Binding UILanguageRes.AccountButtonContent}"/>
             <!-- Adding new training button -->
-            <Button ToolTip="Add New Training" Margin="0,0,0, 10" MaxHeight="80"
+            <Button Margin="0,0,0, 10" MaxHeight="80"
                 Background="{DynamicResource MW_ButtonBackground}" Foreground="{DynamicResource MW_ButtonForeground}"
                 x:Name="AddTrainingButton" Click="AddTrainingButton_Click" Content="{Binding UILanguageRes.TrainingButtonContent}"/>
             <!-- Analytics button -->
-            <Button ToolTip="View Analytics" Margin="0,0,0, 10" MaxHeight="80"
+            <Button Margin="0,0,0, 10" MaxHeight="80"
                 Background="{DynamicResource MW_ButtonBackground}" Foreground="{DynamicResource MW_ButtonForeground}"
                 x:Name="AnalyticsButton" Click="AnalyticsButton_Click" Content="{Binding UILanguageRes.AnalyticsButtonContent}"/>
             <!-- General settings button -->
-            <Button ToolTip="App Settings" Margin="0,0,0, 10" MaxHeight="80"
+            <Button Margin="0,0,0, 10" MaxHeight="80"
                 Background="{DynamicResource MW_ButtonBackground}" Foreground="{DynamicResource MW_ButtonForeground}"
                 x:Name="SettingsButton" Click="SettingsButton_Click" Content="{Binding UILanguageRes.SettingsButtonContent}"/>
         </UniformGrid>
@@ -80,7 +80,7 @@
                                    x:Name="TrainingInfoTextBlock" Text="{Binding InfoAboutTraining}"/>
                                 <!-- Button to open the training window -->
                                 <Button Grid.Column="2" Grid.RowSpan="2"
-                                    BorderThickness="0" Margin="12" ToolTip="Open this training"
+                                    BorderThickness="0" Margin="12"
                                     Background="{DynamicResource MW_ListItemButtonBackground}" Foreground="{DynamicResource MW_ListItemButtonForeground}" Cursor="Hand"
                                     FontSize="40" FontWeight="DemiBold" FontStyle="Italic"
                                     x:Name="OpenTrainingButton" Click="OpenTrainingButton_Click" Content="{Binding OpenTrainingButtonContent}"/>

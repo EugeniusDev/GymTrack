@@ -387,6 +387,39 @@
   <data name="settingsSubHeader" xml:space="preserve">
     <value>*All the data is yours. It is stored only locally on your device</value>
   </data>
+  <data name="StatW_compTimeStatButtonContent" xml:space="preserve">
+    <value>Comp. time</value>
+  </data>
+  <data name="StatW_compTimeStatHeaderPart" xml:space="preserve">
+    <value>Completion time of trainings</value>
+  </data>
+  <data name="StatW_enforceabilityStatButtonContent" xml:space="preserve">
+    <value>Enforceability</value>
+  </data>
+  <data name="StatW_enforceabilityTimeStatHeaderPart" xml:space="preserve">
+    <value>Enforceability (trainings count)</value>
+  </data>
+  <data name="StatW_headerPart1" xml:space="preserve">
+    <value>Statistics:</value>
+  </data>
+  <data name="StatW_noDataText" xml:space="preserve">
+    <value>There is no data to form statistics from</value>
+  </data>
+  <data name="StatW_setsStatButtonContent" xml:space="preserve">
+    <value>Sets</value>
+  </data>
+  <data name="StatW_setsStatHeaderPart" xml:space="preserve">
+    <value>Sum of sets</value>
+  </data>
+  <data name="StatW_weightStatButtonContent" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="StatW_weightTimeStatHeaderPart" xml:space="preserve">
+    <value>Changes in your weight</value>
+  </data>
+  <data name="StatW_windowTitle" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
   <data name="successfullSettingsExportMessage" xml:space="preserve">
     <value>Settings exported successfully</value>
   </data>

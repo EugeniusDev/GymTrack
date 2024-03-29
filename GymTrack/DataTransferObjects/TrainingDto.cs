@@ -4,6 +4,9 @@ using System.Collections.ObjectModel;
 
 namespace GymTrack.Objects
 {
+    /// <summary>
+    /// Used for managing data of training (in TrainingWindow and TrainingCompletedWindow)
+    /// </summary>
     [Serializable]
     public class TrainingDto
     {

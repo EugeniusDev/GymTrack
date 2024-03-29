@@ -3,9 +3,15 @@ using System.Resources;
 
 namespace GymTrack.Resources.Languages
 {
+    /// <summary>
+    /// Represents a language manager that populates required strings or updates current source of them
+    /// </summary>
     public static class LanguageManager
     {
         private static string resourceToUse = "GymTrack.Resources.Languages.English";
+        /// <summary>
+        /// Updates resource language table to a current language
+        /// </summary>
         public static void UpdateCurrentLanguageResource()
         {
             ushort currentLanguageID = Properties.Settings.Default.LanguageID;
@@ -25,6 +31,11 @@ namespace GymTrack.Resources.Languages
                     break;
             }
         }
+        /// <summary>
+        /// Gets string value of language table row by string key
+        /// </summary>
+        /// <param name="key">String key of required value</param>
+        /// <returns>Value of language table row</returns>
         public static string GetStringByKey(string key)
         {
             ResourceManager resourceManager = new ResourceManager(resourceToUse, Assembly.GetExecutingAssembly());
@@ -222,7 +233,7 @@ namespace GymTrack.Resources.Languages
         }
         #endregion
 
-        #region TrainingWindow resource structures population
+        #region TrainingCompletedWindow resource structures population
         public static TcwUIlanguageResources PopulateTCompW_UIlanguageResources()
         {
             return new TcwUIlanguageResources
@@ -236,7 +247,35 @@ namespace GymTrack.Resources.Languages
         {
             return new TcWlanguageResources
             {
-                // todo remove if not needed
+                SavingErrorTitle = GetStringByKey("TW_unknownSavingErrorTitle"),
+                SavingErrorMessage = GetStringByKey("TW_unknownSavingErrorMessage")
+            };
+        }
+        #endregion
+
+        #region StatisticsWindow resource structures population
+        public static StatisticswUIlanguageResources PopulateStatysticsw_UIlanguageResources()
+        {
+            return new StatisticswUIlanguageResources
+            {
+                WindowTitle = GetStringByKey("StatW_windowTitle"),
+                HeaderFirstPart = GetStringByKey("StatW_headerPart1"),
+                NoDataText = GetStringByKey("StatW_noDataText"),
+                CompletionTimeStatButton = GetStringByKey("StatW_compTimeStatButtonContent"),
+                EnforceabilityStatButton = GetStringByKey("StatW_enforceabilityStatButtonContent"),
+                SetsStatButton = GetStringByKey("StatW_setsStatButtonContent"),
+                WeightStatButton = GetStringByKey("StatW_weightStatButtonContent"),
+                MainMenuButton = GetStringByKey("mainMenuButtonContent")
+            };
+        }
+        public static StatisticswLanguageResources PopulateStatysticswlanguageResources()
+        {
+            return new StatisticswLanguageResources
+            {
+                CompletionTimeStatChapter = GetStringByKey("StatW_compTimeStatHeaderPart"),
+                EnforceabilityStatChapter = GetStringByKey("StatW_enforceabilityTimeStatHeaderPart"),
+                SetsStatChapter = GetStringByKey("StatW_setsStatHeaderPart"),
+                WeightStatChapter = GetStringByKey("StatW_weightTimeStatHeaderPart")
             };
         }
         #endregion

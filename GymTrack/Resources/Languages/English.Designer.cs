@@ -871,6 +871,105 @@ namespace GymTrack.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comp. time.
+        /// </summary>
+        public static string StatW_compTimeStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_compTimeStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completion time of trainings.
+        /// </summary>
+        public static string StatW_compTimeStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_compTimeStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enforceability.
+        /// </summary>
+        public static string StatW_enforceabilityStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_enforceabilityStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enforceability (trainings count).
+        /// </summary>
+        public static string StatW_enforceabilityTimeStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_enforceabilityTimeStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Statistics:.
+        /// </summary>
+        public static string StatW_headerPart1 {
+            get {
+                return ResourceManager.GetString("StatW_headerPart1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There is no data to form statistics from.
+        /// </summary>
+        public static string StatW_noDataText {
+            get {
+                return ResourceManager.GetString("StatW_noDataText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sets.
+        /// </summary>
+        public static string StatW_setsStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_setsStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sum of sets.
+        /// </summary>
+        public static string StatW_setsStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_setsStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight.
+        /// </summary>
+        public static string StatW_weightStatButtonContent {
+            get {
+                return ResourceManager.GetString("StatW_weightStatButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changes in your weight.
+        /// </summary>
+        public static string StatW_weightTimeStatHeaderPart {
+            get {
+                return ResourceManager.GetString("StatW_weightTimeStatHeaderPart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Statistics.
+        /// </summary>
+        public static string StatW_windowTitle {
+            get {
+                return ResourceManager.GetString("StatW_windowTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings exported successfully.
         /// </summary>
         public static string successfullSettingsExportMessage {

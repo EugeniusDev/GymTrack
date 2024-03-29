@@ -1,12 +1,16 @@
 ﻿namespace GymTrack
 {
-    // Used for buttons Edit/Save
+    /// <summary>
+    /// Used for buttons Edit/Save
+    /// </summary>
     public enum EditButtonMode
     {
         CanEdit,
         CanSave
     }
-    // Used in exercises
+    /// <summary>
+    /// Used for exercises manipulation
+    /// </summary>
     public enum ExerciseDifficulty
     {
         Warmup,
@@ -14,7 +18,9 @@
         Medium,
         Hard
     }
-    // Used while choosing theme
+    /// <summary>
+    /// Used for choosing theme
+    /// </summary>
     public enum Theme
     {
         Light,
@@ -23,11 +29,23 @@
         Oppenheimer,
         Hacker
     }
-    // Used while choosing language
+    /// <summary>
+    /// Used for choosing language
+    /// </summary>
     public enum AppLanguage
     {
         English,
         LiteratureUkrainian,
         SpokenUkrainian
+    }
+    /// <summary>
+    /// Used for choosing type of statistics to display
+    /// </summary>
+    public enum StatType
+    {
+        CompletionTime,
+        Enforceability,
+        Sets,
+        Weight
     }
 }

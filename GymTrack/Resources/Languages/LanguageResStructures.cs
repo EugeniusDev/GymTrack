@@ -207,7 +207,35 @@ namespace GymTrack.Resources.Languages
     /// </summary>
     public struct TcWlanguageResources
     {
-        // todo remove if not needed
+        public string SavingErrorTitle { get; set; }
+        public string SavingErrorMessage { get; set; }
+    }
+    #endregion
+
+    #region StatisticsWindow related
+    /// <summary>
+    /// Structure for holding StatisticsWindow UI related resources
+    /// </summary>
+    public struct StatisticswUIlanguageResources
+    {
+        public string WindowTitle { get; set; }
+        public string HeaderFirstPart { get; set; }
+        public string NoDataText { get; set; }
+        public string CompletionTimeStatButton { get; set; }
+        public string EnforceabilityStatButton { get; set; }
+        public string SetsStatButton { get; set; }
+        public string WeightStatButton { get; set; }
+        public string MainMenuButton { get; set; }
+    }
+    /// <summary>
+    /// Structure for holding StatisticsWindow interaction logic related resources
+    /// </summary>
+    public struct StatisticswLanguageResources
+    {
+        public string CompletionTimeStatChapter { get; set; }
+        public string EnforceabilityStatChapter { get; set; }
+        public string SetsStatChapter { get; set; }
+        public string WeightStatChapter { get; set; }
     }
     #endregion
 

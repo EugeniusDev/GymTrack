@@ -302,8 +302,6 @@ namespace GymTrack
         private void CompleteTrainingButton_Click(object sender, RoutedEventArgs e)
         {
             SaveTraining();
-            // TODO
-            //mark as done, form analytics
             TrainingCompletedWindow trainingCompletedWindow = new TrainingCompletedWindow(currentTraining);
             trainingCompletedWindow.Show();
             Close();

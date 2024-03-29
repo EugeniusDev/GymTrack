@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using GymTrack.DataTransferObjects;
 using GymTrack.Resources.Languages;
 using GymTrack.Themes;
+using GymTrack.DatabaseRelated;
 
 namespace GymTrack
 {
@@ -49,7 +50,18 @@ namespace GymTrack
 
         private void ConfirmButton_Click(object sender, RoutedEventArgs e)
         {
-            // TODO save data to analytics
+            int sumOfSetsCount = 0;
+            foreach (var exercise in currentTraining.ExerciseObjects)
+            {
+                sumOfSetsCount += exercise.SetsCount;
+            }
+
+            StatisticsStampDto statisticsStampDto = new StatisticsStampDto(currentTraining.TrainingTitle, sumOfSetsCount);
+            if (!StatisticsWriter.AppendObjectToStatisticsFile(statisticsStampDto))
+            {
+                MessageBox.Show(TextRes.SavingErrorMessage, TextRes.SavingErrorTitle, MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();

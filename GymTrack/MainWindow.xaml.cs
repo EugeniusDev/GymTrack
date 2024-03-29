@@ -73,9 +73,13 @@ namespace GymTrack
 
         private void AnalyticsButton_Click(object sender, RoutedEventArgs e)
         {
-            // TODO
-            MessageBox.Show("This feature is currently in development. Coming soon!", "Currently unavailable", MessageBoxButton.OK, MessageBoxImage.Information);
+            StatisticsWindow analyticsWindow = new StatisticsWindow();
+            analyticsWindow.Show();
+            Close();
 
+            // TODO
+            return;
+            MessageBox.Show("This feature is currently in development. Coming soon!", "Currently unavailable", MessageBoxButton.OK, MessageBoxImage.Information);
         }
         #endregion
 
