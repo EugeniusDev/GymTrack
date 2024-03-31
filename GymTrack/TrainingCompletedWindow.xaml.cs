@@ -19,6 +19,10 @@ namespace GymTrack
         public TcwUIlanguageResources UILanguageRes { get; set; }
         public TcWlanguageResources TextRes { get; set; }
 
+        /// <summary>
+        /// Window for marking the training completed
+        /// </summary>
+        /// <param name="trainingToBeDone">Object of training to be marked completed</param>
         public TrainingCompletedWindow(TrainingDto trainingToBeDone)
         {
             LanguageManager.UpdateCurrentLanguageResource();

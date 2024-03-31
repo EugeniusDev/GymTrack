@@ -25,7 +25,7 @@ namespace GymTrack.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Amogus")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Username {
             get {
                 return ((string)(this["Username"]));

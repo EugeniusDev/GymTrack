@@ -28,6 +28,10 @@ namespace GymTrack
         private readonly Button[] dayoffButtonsArray;
 
         private bool weightIsTracked = false;
+
+        /// <summary>
+        /// Window for configuring and changing account settings
+        /// </summary>
         public AccountSettingsWindow()
         {
             TextRes = LanguageManager.PopulateASWlanguageResources();

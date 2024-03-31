@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Username" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Amogus</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Dayoffs" Type="System.Byte" Scope="User">
       <Value Profile="(Default)">65</Value>

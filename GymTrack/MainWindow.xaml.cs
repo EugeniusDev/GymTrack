@@ -18,6 +18,9 @@ namespace GymTrack
         public MwlanguageResources TextRes { get; set; }
         
         #region Configuration and startup
+        /// <summary>
+        /// Window that plays role of main menu
+        /// </summary>
         public MainWindow()
         {
             LanguageManager.UpdateCurrentLanguageResource();

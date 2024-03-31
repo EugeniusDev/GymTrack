@@ -26,7 +26,7 @@ namespace GymTrack
 
         #region Configuration of a window
         /// <summary>
-        /// Parameterless constructor for mode of creating trainings
+        /// Window for manipulations with trainings. Parameterless constructor for mode of creating trainings
         /// </summary>
         public TrainingWindow()
         {
@@ -36,7 +36,7 @@ namespace GymTrack
             TrainingTitleTextBox.Text = currentTraining.TrainingTitle;
         }
         /// <summary>
-        /// Constructor that opens training by given title string
+        /// Window for manipulations with trainings. Constructor that opens training by given title string
         /// </summary>
         /// <param name="titleOfTrainingToSearch">Title of training to open</param>
         public TrainingWindow(string titleOfTrainingToSearch)

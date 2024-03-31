@@ -1,19 +1,8 @@
 ﻿using GymTrack.DatabaseRelated;
 using GymTrack.DataTransferObjects;
 using GymTrack.Resources.Languages;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace GymTrack
 {
@@ -22,10 +11,14 @@ namespace GymTrack
     /// </summary>
     public partial class StatisticsWindow : Window
     {
-        public StatisticsViewModel statisticsModel;
+        public StatisticsViewModel statisticsModel { get; set; }
         public StatisticswUIlanguageResources UILanguageRes { get; set; }
         public StatisticswLanguageResources TextRes { get; set; }
         private StatType currentStatisticsType = StatType.CompletionTime;
+
+        /// <summary>
+        /// Window for displaying statistics of trainings
+        /// </summary>
         public StatisticsWindow()
         {
             UILanguageRes = LanguageManager.PopulateStatysticsw_UIlanguageResources();

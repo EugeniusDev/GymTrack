@@ -20,6 +20,10 @@ namespace GymTrack
         private bool windowIsLoaded = false;
         private ushort selectedThemeId = 0, selectedLanguageID = 0;
         private bool isTimeIn24Format;
+
+        /// <summary>
+        /// Window for configuring and changing application settings
+        /// </summary>
         public AppSettingsWindow()
         {
             UILanguageRes = LanguageManager.PopulateAppSW_UIlanguageResources();
