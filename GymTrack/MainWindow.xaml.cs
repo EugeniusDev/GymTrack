@@ -79,10 +79,6 @@ namespace GymTrack
             StatisticsWindow analyticsWindow = new StatisticsWindow();
             analyticsWindow.Show();
             Close();
-
-            // TODO
-            return;
-            MessageBox.Show("This feature is currently in development. Coming soon!", "Currently unavailable", MessageBoxButton.OK, MessageBoxImage.Information);
         }
         #endregion
 
